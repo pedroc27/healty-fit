@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    background: #054c2c;
+}
+
+.foto-mini {
+    margin-left: 50px;
+    padding: 5px;
+    float: left;
+    width: 20%;
+}
+
+.foto {
+    width: 100px; 
+    height: 100px;
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.inicio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.inicio .contenido-banner{
+    padding: 10px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.perfil {
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    
+}
+.foto-perfil{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+   
+}
+.inicio .contenido-banner h2{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'poppins';
+    color: #054c2c;
+    padding: 0px 40px;
+}
+.inicio .contenido-banner .redes a{
+    color: #054c2c;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #054c2c;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #054c2c;
+    color: white;
+}
+.sobrenos{
+    background-color: #054c2c;
+    color: white;
+    padding: 50px 20px;
+}
+
+.sobrenos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobrenos h2{
+    font-size: 48px;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobrenos .contenido-seccion p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.sobrenos .contenido-seccion p span{
+    font-weight: bold;
+}
+
+.sobrenos .fila{
+    display: flex;
+}
+
+.sobrenos .fila .col{
+    width: 50%;
+}
+
+.perfil2{
+    padding: 20px;
+    max-width: 350px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.foto-perfil2 {
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.ofrecemos {
+    background: #054c2c;
+    color: #fff;
+    padding: 50px 20px; 
+}
+
+.ofrecemos h2 {
+    font-size: 48px;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+
+.cont-ofrecemos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; 
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.cont-iconos {
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: gray;
+}
+
+.cont-iconos h3 {
+    padding: 10px 0;
+    color: #054c2c;
+    font-size: 22px;
+}
+
+.cont-iconos p {
+    color: #054c2c;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.productos{
+    background-color: white;
+    color: #fff;
+    padding: 50px 20px;
+}
+.productos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.productos h2{
+    font-size: 48px;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 20px 0;
+    color: #054c2c;
+}
+.productos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.productos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.productos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.productos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.productos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(14, 85, 9, 0.8), rgba(14, 75, 32, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.productos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.productos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.productos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+.testimonio {
+    background: #054c2c;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.testimonio h1 {
+    font-size: 48px;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+
+.slider-testimonial {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.testimonial-item {
+    width: 250px;
+    margin: 20px;
+}
+
+.testimonial-client{
+	margin-bottom: 15px;
+}
+
+.testimonial-client img{
+	margin: auto;
+	border-radius:50%;
+	width:250px;
+	height:250px;
+    border: 4px solid white;
+}
+
+.cliente-name{
+	color: white;
+	font-size:24px;
+	font-weight: bold;
+	font-family: 'poppins';
+	text-align: center;
+	margin: 10px;
+}
+
+
+.testimonial-text p {
+    color: white;
+    font-family: 'poppins';
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 3px;
+}
+
+.sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* contacto */
+.contacto {
+    background-color: white;
+    color: #054c2c;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.contacto .col.formulario {
+    height: 100%; 
+}
+
+.contacto .col input, .contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 10px; 
+    border: none;
+    margin-bottom: 10px;
+    background-color: #054c2c;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;}
+
+.contacto .col textarea {
+    height: 120px;
+}
+
+input[name="envio"] {
+    font-family: poppins;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    width: fit-content;
+    padding: 8px 18px;
+    font-size: 14px;
+    color: #054c2c;
+    background: white;
+    position: relative;
+    z-index: 10;
+    align-self: center; 
+}
+
+input[name="envio"]:hover {
+    color: #054c2c;
+    background: white;
+    border: 2px solid #054c2c;
+}
+
+/* Estilo para la imagen */
+.contacto .col img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+footer {
+    width: 100%;
+    padding: 30px 5px 30px 5px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #054c2c;
+    color: #FFFFFF;
+}
+.footer {
+    text-align: left;
+    width: 320px;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+}
+
